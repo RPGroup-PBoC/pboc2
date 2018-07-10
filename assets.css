@@ -404,18 +404,22 @@ body {
 }
 
 body {
-  background: #fff;
+  /* background: #fff; */
+  background-image: url("assets/galapagos.jpg")
+  opacity: 0.95;
 }
+
+
 
 body,
 input,
 textarea {
-  color: #191919;
+  color: #000000;
   font: 14px/140% 'Open Sans', Arial, sans-serif;
 }
 
 a {
-  color: #119bdf;
+  color: #D56C55;
   text-decoration: none;
 }
 a:hover {
@@ -437,9 +441,23 @@ code {
   font-family: 'Monaco', monospace, sans-serif;
 }
 
+/* Table formatting */
+table {
+  width: 100%;
+}
+tr:nth-child(even) {
+  background: #eee;
+}
+
+th {
+  padding: 1em;
+  background: #A9BFE3;
+} 
+
 /* SIDEBAR */
 #sidebar {
-  background: #191919;
+  background-image: url("assets/galapagos_crp.jpg");
+  background-attachment: fixed;
   color: #fff;
   float: left;  
   height: 100%;
@@ -448,10 +466,13 @@ code {
   top: 0;
   width: 240px;
 }
+img {
+  border:1px solid #000;
+}
 
 #sidebar h1 {
-  background: #111;
-  font-size: 14px;
+  background: #A9BFE3; 
+  font-size: 20px;
   margin: 0;
   padding: 20px;
   text-transform: uppercase;
@@ -464,6 +485,7 @@ code {
 }
 
 #sidebar ul {
+  background: rgba(180, 193, 204, 1.00);
   list-style: none;
   margin: 0;
   padding: 0;
@@ -528,7 +550,7 @@ code {
 }
 
 #content article > a {
-  background: #333;
+  background: #E3DCD1;
   border-radius: 2px;
   -moz-border-radius: 2px;
   -webkit-border-radius: 2px;
@@ -537,12 +559,12 @@ code {
   padding: 15px;
 }
 #content article > a:hover {
-  background: #222;
+  background: #ffedce;
   text-decoration: none;
 }
 
 #content a h2 {
-  color: #fff;
+  color: #000;
   font-size: 18px;
   font-weight: normal;
   margin: 0;
