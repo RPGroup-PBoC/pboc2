@@ -104,7 +104,10 @@ a:hover {
  * Address variable `h1` font-size and margin within `section` and `article`
  * contexts in Firefox 4+, Safari 5, and Chrome.
  */
-
+section {
+  margin: auto;
+  background-color:rgba(255, 255, 255, 0.8);
+}
 h1 {
     font-size: 2em;
     margin: 0.67em 0;
@@ -405,8 +408,10 @@ body {
 
 body {
   /* background: #fff; */
-  background-image: url("assets/galapagos.jpg")
-  opacity: 0.95;
+  background-image: url("assets/galapagos.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+
 }
 
 
@@ -456,11 +461,8 @@ th {
 
 /* SIDEBAR */
 #sidebar {
-  background-image: url("assets/galapagos_crp.jpg");
-  background-attachment: fixed;
-  color: #fff;
-  float: left;  
   height: 100%;
+  margin:auto;
   overflow: auto;
   position: fixed;
   top: 0;
@@ -533,9 +535,11 @@ img {
 
 /* References */
 #content {
+  margin: auto;
+  width: 50%;
   padding: 20px;
-  padding-left: 260px;
-  max-width: 700px;
+  /* padding-left: 260px; */
+  max-width: 750px;
 }
 
 #content .control {
